@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue | Footiq Jersey Store</title>
+    <meta name="description" content="Browse our full collection of premium football jerseys. Ac Milan, Barca, Madrid, CR7, Messi, Anime kits and more.">
+    <meta property="og:title" content="Catalogue | Footiq Jersey Store">
+    <meta property="og:description" content="Browse our full collection of premium football jerseys.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+            <img src="assets/logo.png" alt="Footiq Jersey Store" class="nav-logo" style="height: 40px; object-fit: contain;">
+        </a>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="catalogue.html" class="nav-item active">Catalogue</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+            <a href="https://wa.me/918891065870" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 1rem;">Order Now</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="aurora-bg"></div>
+        <div class="noise-overlay"></div>
+        <div class="container text-center reveal" style="position:relative; z-index:10;">
+            <h1 class="hero-title" style="font-size: clamp(3rem, 8vw, 6rem);">OUR COLLECTION</h1>
+            <p class="hero-subtitle">Browse · Screenshot · Order</p>
+        </div>
+    </header>
+
+    <!-- Filter Bar (sticky) -->
+    <div class="filter-bar">
+        <div class="container filter-container">
+            <div class="filter-pills" id="categoryFilters">
+                <button class="filter-pill active" data-category="all">All Jerseys</button>
+                <!-- Dynamically populated category pills -->
+            </div>
+            <div class="search-box">
+                <i class="fa-solid fa-mag"></i>
+                <input type="text" id="searchInput" placeholder="Search jerseys...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Catalogue -->
+    <main class="catalogue-main section-padding" style="padding-top: 2rem;">
+        <div class="container">
+            <!-- All Jerseys Grid (default view) -->
+            <div id="allJerseysSection">
+                <div class="jersey-grid" id="allJerseysGrid"></div>
+            </div>
+            
+            <!-- Category Sections Container -->
+            <div id="categorySectionsContainer"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" style="flex: 2;">
+                    <img src="assets/logo.png" alt="Footiq Jersey Store" style="height: 50px; object-fit: contain; margin-bottom: 1rem;">
+                    <p>Premium football jerseys. Dark aesthetic, brightest quality. Wear the game with pride.</p>
+                    <div style="margin-top: 1rem; color: var(--text-secondary);">
+                        <p style="margin-bottom: 0.3rem;"><a href="tel:+918891065870"><i class="fa-solid fa-phone" style="width:20px;"></i> +91 88910 65870</a></p>
+                        <p><a href="mailto:footiqwears@gmail.com"><i class="fa-solid fa-envelope" style="width:20px;"></i> footiqwears@gmail.com</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/footiq.sports/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/918891065870" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="catalogue.html">Catalogue</a>
+                        <a href="about.html">Our Story</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <div class="footer-links">
+                        <a href="contact.html">How to Order</a>
+                        <a href="contact.html">FAQ</a>
+                        <a href="https://chat.whatsapp.com/EzghZ6xaZ2uLqM0MJuioJd" target="_blank">WhatsApp Community</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footiq Jersey Store. Made with ❤️ in Kerala.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/catalogue.js"></script>
+</body>
+</html>
